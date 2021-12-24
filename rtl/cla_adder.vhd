@@ -25,7 +25,7 @@ component partial_full_adder
 		   G : out std_logic);
 end component;
 
-signal C1,C2,C3,C4,C5,C6,C7 : std_logic;
+signal C_in1,C1,C2,C3,C4,C5,C6,C7 : std_logic;
 signal P,G   : std_logic_vector(7 downto 0);
 signal not_B : std_logic_vector(7 downto 0); 
 
@@ -42,7 +42,7 @@ B5 : inverter port map (I => B(5), O => not_B(5));
 B6 : inverter port map (I => B(6), O => not_B(6));
 B7 : inverter port map (I => B(7), O => not_B(7));
 
-PFA0  : partial_full_adder port map (A => A(0), B => not_B(0),C => C_in, P => P(0), S => S(0), G => G(0)); 	
+PFA0  : partial_full_adder port map (A => A(0), B => not_B(0),C => C_in1, P => P(0), S => S(0), G => G(0)); 	
 PFA1  : partial_full_adder port map (A => A(1), B => not_B(1),C => C1, 	 P => P(1), S => S(1), G => G(1)); 	
 PFA2  : partial_full_adder port map (A => A(2), B => not_B(2),C => C2, 	 P => P(2), S => S(2), G => G(2)); 	
 PFA3  : partial_full_adder port map (A => A(3), B => not_B(3),C => C3, 	 P => P(3), S => S(3), G => G(3)); 	
@@ -62,7 +62,7 @@ PFA7  : partial_full_adder port map (A => A(7), B => not_B(7),C => C7, 	 P => P(
 
 
 --for 2's complement
-C_in <= 1;
+C_in1 <= '1';
 
 
 
