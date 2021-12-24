@@ -63,7 +63,7 @@ begin
   AND5  : and_gate port map(I_0 => gate_O_and(1), I_1 => not_B(2), O => gate_O_and(2));
   AND6  : and_gate port map(I_0 => gate_O_and(8), I_1 => A(1), O => gate_O_and(3));
   AND7  : and_gate port map(I_0 => gate_O_and(3), I_1 => not_B(1), O => gate_O_and(4));
-  AND8  : and_gate port map(I_0 => gate_O_and(1), I_1 => s(1), O => gate_O_and(5));
+  AND8  : and_gate port map(I_0 => gate_O_and(8), I_1 => s(1), O => gate_O_and(5));
   AND9  : and_gate port map(I_0 => gate_O_and(5), I_1 => A(0), O => gate_O_and(6));
   AND10 : and_gate port map(I_0 => gate_O_and(6), I_1 => not_B(0), O => gate_O_and(7));
   AND22 : and_gate port map(I_0 => s(3), I_1 => s(2), O => gate_O_and(8));

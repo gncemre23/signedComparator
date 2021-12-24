@@ -48,7 +48,7 @@ begin
   and_0 : and_gate port map(not_a, B(7), wire(0));
 
   -- a_eq_b = nor(sub0,sub1,sub2,...sub7)
-  or_gen0 : or_generic port map(sub_out(0), sub_out(1), sub_out(2), sub_out(3), sub_out(4), sub_out(5), sub_out(6), sub_out(7), wire(1));
+  or_gen0 : or_generic generic map(8) port map(sub_out(0), sub_out(1), sub_out(2), sub_out(3), sub_out(4), sub_out(5), sub_out(6), sub_out(7), wire(1));
   not_1   : inverter port map(wire(1), wire(2));
 
   a_eq_b <= wire(2);

@@ -77,8 +77,8 @@ begin
     a_lt_B   => m_A_lt_B
   );
 
-  A_high <= '0'  & comparator_in_A(6 downto 4);
-  B_high <= '0'  & comparator_in_B(6 downto 4);
+  A_high <=  comparator_in_A(7 downto 4);
+  B_high <=  comparator_in_B(7 downto 4);
   magnitude_comparator_4bit_high : magnitude_comparator_4bit
   port map(
     A        => A_high,
@@ -104,7 +104,7 @@ begin
   );
   
   comparator_in_A <= ((A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7)) and neg_A) or ((not_A & not_A & not_A & not_A & not_A & not_A & not_A & not_A) and A);
-  comparator_in_B <= ((B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7)) and neg_B) or ((not_B & not_B & not_B & not_B & not_B & not_B & not_B & not_B) and B);W
+  comparator_in_B <= ((B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7)) and neg_B) or ((not_B & not_B & not_B & not_B & not_B & not_B & not_B & not_B) and B);
 
   -- A > B
 
