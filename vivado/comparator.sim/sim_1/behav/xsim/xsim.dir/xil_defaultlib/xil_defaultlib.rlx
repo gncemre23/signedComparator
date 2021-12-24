@@ -1,0 +1,21 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/egoncu/Desktop/github/signedComparator/rtl/2_complement.vhd,1640363122,vhdl,,,,twos_complement,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd,1640287311,vhdl,,,,and_gate,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd,1640338861,vhdl,,,,and_generic,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd,1640347341,vhdl,/home/egoncu/Desktop/github/signedComparator/rtl/2_complement.vhd,,,carry_look_ahead,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd,1640344026,vhdl,/home/egoncu/Desktop/github/signedComparator/rtl/stage2_comp.vhd,,,gate_package,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/inverter.vhd,1640287311,vhdl,,,,inverter,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/magnitude_comparator_4bit.vhd,1640359005,vhdl,,,,magnitude_comparator_4bit,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/nor.vhd,1640287311,vhdl,,,,nor_gate,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd,1640287311,vhdl,,,,or_gate,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd,1640338917,vhdl,,,,or_generic,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd,1640346135,vhdl,,,,partial_full_adder,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/stage1_comp.vhd,1640352905,vhdl,/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd,,,stage_1_comp,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/stage2_comp.vhd,1640362777,vhdl,/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd,,,stage_2_comp,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/xnor.vhd,1640287311,vhdl,,,,xnor_gate,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd,1640287311,vhdl,,,,xor_gate,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd,1640363262,vhdl,,,,tb_comparator,,,,,,,,
+/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd,1640347019,vhdl,,,,tb_carry_look_ahead,,,,,,,,

@@ -1,0 +1,579 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 24 13:59:38 2021
+# Process ID: 1658911
+# Current directory: /home/egoncu/Desktop/github/signedComparator/vivado
+# Command line: vivado
+# Log file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.log
+# Journal file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project comparator . -part xc7a25tcsg325-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property target_language VHDL [current_project]
+add_files {/home/egoncu/Desktop/github/signedComparator/rtl/xnor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd /home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd /home/egoncu/Desktop/github/signedComparator/rtl/nor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/or.vhd /home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd /home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd /home/egoncu/Desktop/github/signedComparator/rtl/nand.vhd /home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/and.vhd /home/egoncu/Desktop/github/signedComparator/rtl/inverter.vhd /home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a25tcsg325-2L
+Top: carry_look_ahead
+INFO: [Device 21-403] Loading part xc7a25tcsg325-2L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7511.355 ; gain = 0.000 ; free physical = 375 ; free virtual = 17544
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:51]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:52]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:91]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:92]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95]
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:56]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:57]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:58]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:92]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95]
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:61]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:62]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:63]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:64]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95]
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:67]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:68]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:69]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:70]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:71]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95]
+ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:74]
+INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:75]
+INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:76]
+INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:77]
+INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+ERROR: [Synth 8-2029] formal i_7 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:78]
+INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 7569.039 ; gain = 57.684 ; free physical = 412 ; free virtual = 17583
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+70 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a25tcsg325-2L
+Top: carry_look_ahead
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7586.043 ; gain = 0.000 ; free physical = 366 ; free virtual = 17546
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'carry_look_ahead' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:16]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA0' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:20]
+INFO: [Synth 8-3491] module 'xor_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd:6' bound to instance 'xor1' of component 'xor_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'xor_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'xor_gate' (1#1) [/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd:14]
+INFO: [Synth 8-3491] module 'xor_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd:6' bound to instance 'xor2' of component 'xor_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:27]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'and1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (2#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'partial_full_adder' (3#1) [/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:20]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA1' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:36]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA2' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:37]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA3' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:38]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA4' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:39]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA5' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:40]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA6' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:41]
+INFO: [Synth 8-3491] module 'partial_full_adder' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd:8' bound to instance 'PFA7' of component 'partial_full_adder' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:42]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:46]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'OR0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:50]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN0' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'and_generic' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:33]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'and_generic' (5#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN0' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'or_generic' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or1' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'or_generic' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:55]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN1' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:56]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN2' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized0' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:38]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:39]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'and_generic__parameterized0' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN1' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized0' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:38]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or1' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:39]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or2' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'or_generic__parameterized0' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND3' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:60]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN3' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:61]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN4' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:62]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN5' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized1' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:44]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:45]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:46]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND3' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'and_generic__parameterized1' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN2' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized1' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:44]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or1' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:45]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or2' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:46]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or3' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'or_generic__parameterized1' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND4' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:66]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN6' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:67]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN7' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:68]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN8' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:69]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN9' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized2' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:51]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:52]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:53]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND3' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:54]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND4' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'and_generic__parameterized2' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN3' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized2' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:51]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or1' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:52]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or2' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:53]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or3' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:54]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or4' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'or_generic__parameterized2' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND5' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:73]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN10' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:74]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN11' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:75]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN12' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:76]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN13' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:77]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN14' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized3' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:59]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:60]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:61]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND3' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:62]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND4' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:63]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND5' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'and_generic__parameterized3' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN4' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized3' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or0' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:59]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or1' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:60]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or2' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:61]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or3' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:62]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or4' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:63]
+INFO: [Synth 8-3491] module 'or_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd:6' bound to instance 'or5' of component 'or_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'or_generic__parameterized3' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND6' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:81]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN15' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:82]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN16' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:83]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN17' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:84]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN18' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:85]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN19' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:86]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN20' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized4' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:68]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:69]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND2' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:70]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND3' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:71]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND4' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:72]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND5' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:73]
+INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND6' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'and_generic__parameterized4' (6#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN5' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'carry_look_ahead' (7#1) [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7586.043 ; gain = 0.000 ; free physical = 414 ; free virtual = 17595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7601.918 ; gain = 15.875 ; free physical = 412 ; free virtual = 17592
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7601.918 ; gain = 15.875 ; free physical = 412 ; free virtual = 17592
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7601.918 ; gain = 0.000 ; free physical = 405 ; free virtual = 17586
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7770.668 ; gain = 0.000 ; free physical = 323 ; free virtual = 17513
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 7894.949 ; gain = 308.906 ; free physical = 346 ; free virtual = 17469
+127 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 7894.949 ; gain = 308.906 ; free physical = 348 ; free virtual = 17471
+rtl_1
+file mkdir /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd w ]
+add_files -fileset sim_1 /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'and_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'and_generic'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'carry_look_ahead'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/or.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'or_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'or_generic'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'partial_full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xor_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Tb_Carry_Look_Ahead'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 4 elements ; formal 's' expects 8 [/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd:37]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_carry_look_ahead in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Tb_Carry_Look_Ahead'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Cin> does not exist in entity <carry_look_ahead>.  Please compare the definition of block <carry_look_ahead> to its component declaration and its instantion to detect the mismatch. [/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd:15]
+ERROR: [VRFC 10-718] formal port <Cout> does not exist in entity <carry_look_ahead>.  Please compare the definition of block <carry_look_ahead> to its component declaration and its instantion to detect the mismatch. [/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd:17]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_carry_look_ahead in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Tb_Carry_Look_Ahead'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.gate_package
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture arch of entity xil_defaultlib.xor_gate [xor_gate_default]
+Compiling architecture arch of entity xil_defaultlib.and_gate [and_gate_default]
+Compiling architecture arch of entity xil_defaultlib.partial_full_adder [partial_full_adder_default]
+Compiling architecture arch of entity xil_defaultlib.or_gate [or_gate_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [and_generic_default]
+Compiling architecture arch of entity xil_defaultlib.or_generic [or_generic_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=8)\]
+Compiling architecture arch of entity xil_defaultlib.carry_look_ahead [carry_look_ahead_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_carry_look_ahead
+Built simulation snapshot Tb_Carry_Look_Ahead_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/xsim.dir/Tb_Carry_Look_Ahead_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 24 14:17:56 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Tb_Carry_Look_Ahead_behav -key {Behavioral:sim_1:Functional:Tb_Carry_Look_Ahead} -tclbatch {Tb_Carry_Look_Ahead.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Tb_Carry_Look_Ahead.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Tb_Carry_Look_Ahead_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 8145.363 ; gain = 186.844 ; free physical = 352 ; free virtual = 17408
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'carry_look_ahead'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.gate_package
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture arch of entity xil_defaultlib.xor_gate [xor_gate_default]
+Compiling architecture arch of entity xil_defaultlib.and_gate [and_gate_default]
+Compiling architecture arch of entity xil_defaultlib.partial_full_adder [partial_full_adder_default]
+Compiling architecture arch of entity xil_defaultlib.or_gate [or_gate_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [and_generic_default]
+Compiling architecture arch of entity xil_defaultlib.or_generic [or_generic_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=8)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=8)\]
+Compiling architecture arch of entity xil_defaultlib.carry_look_ahead [carry_look_ahead_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_carry_look_ahead
+Built simulation snapshot Tb_Carry_Look_Ahead_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8169.859 ; gain = 10.977 ; free physical = 378 ; free virtual = 17436
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim'
+xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2

@@ -1,0 +1,41 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_comparator_behav xil_defaultlib.tb_comparator -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.gate_package
+Compiling architecture arch of entity xil_defaultlib.xnor_gate [xnor_gate_default]
+Compiling architecture arch of entity xil_defaultlib.and_gate [and_gate_default]
+Compiling architecture arch of entity xil_defaultlib.inverter [inverter_default]
+Compiling architecture arch of entity xil_defaultlib.or_gate [or_gate_default]
+Compiling architecture arch of entity xil_defaultlib.magnitude_comparator_4bit [magnitude_comparator_4bit_defaul...]
+Compiling architecture arch of entity xil_defaultlib.xor_gate [xor_gate_default]
+Compiling architecture arch of entity xil_defaultlib.partial_full_adder [partial_full_adder_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=3)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [and_generic_default]
+Compiling architecture arch of entity xil_defaultlib.or_generic [or_generic_default]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=5)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=6)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=7)\]
+Compiling architecture arch of entity xil_defaultlib.and_generic [\and_generic(width=8)\]
+Compiling architecture arch of entity xil_defaultlib.or_generic [\or_generic(width=8)\]
+Compiling architecture arch of entity xil_defaultlib.carry_look_ahead [carry_look_ahead_default]
+Compiling architecture arch of entity xil_defaultlib.twos_complement [twos_complement_default]
+Compiling architecture arch of entity xil_defaultlib.nor_gate [nor_gate_default]
+Compiling architecture arch of entity xil_defaultlib.stage_2_comp [stage_2_comp_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_comparator
+Built simulation snapshot tb_comparator_behav

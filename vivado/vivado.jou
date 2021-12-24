@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 24 19:19:52 2021
+# Process ID: 1748600
+# Current directory: /home/egoncu/Desktop/github/signedComparator/vivado
+# Command line: vivado comparator.xpr
+# Log file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.log
+# Journal file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project comparator.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/egoncu/Desktop/github/signedComparator/vivado/tb_comparator_behav.wcfg
+source tb_comparator.tcl
+run 3 us
+restart
+restart
+restart
+run 3 us
+restart
+run 3 us
+add_files -norecurse /home/egoncu/Desktop/github/signedComparator/rtl/2_complement.vhd
+update_compile_order -fileset sources_1
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim
+run 3 us
+add_bp {/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd} 53
+remove_bps -file {/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd} -line 53
+add_bp {/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd} 58
+remove_bps -file {/home/egoncu/Desktop/github/signedComparator/tb/tb_comparator.vhd} -line 58
+relaunch_sim
+run 3 us

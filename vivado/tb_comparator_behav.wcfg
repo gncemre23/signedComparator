@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_comparator_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="gate_package" />
+            <top_module name="tb_comparator" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="666667fs"></ZoomStartTime>
+      <ZoomEndTime time="4666667fs"></ZoomEndTime>
+      <Cursor1Time time="2096000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="227"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject type="array" fp_name="/tb_comparator/A">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_comparator/B">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_comparator/a_gt_b">
+      <obj_property name="ElementShortName">a_gt_b</obj_property>
+      <obj_property name="ObjectShortName">a_gt_b</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_comparator/a_lt_b">
+      <obj_property name="ElementShortName">a_lt_b</obj_property>
+      <obj_property name="ObjectShortName">a_lt_b</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_comparator/a_eq_b">
+      <obj_property name="ElementShortName">a_eq_b</obj_property>
+      <obj_property name="ObjectShortName">a_eq_b</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_comparator/uut/sub_out">
+      <obj_property name="ElementShortName">sub_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_out[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

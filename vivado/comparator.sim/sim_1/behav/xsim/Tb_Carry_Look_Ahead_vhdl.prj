@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../rtl/and.vhd" \
+"../../../../../rtl/gate_package.vhd" \
+"../../../../../rtl/and_generic.vhd" \
+"../../../../../rtl/cla_adder.vhd" \
+"../../../../../rtl/or.vhd" \
+"../../../../../rtl/or_generic.vhd" \
+"../../../../../rtl/partial_full_adder.vhd" \
+"../../../../../rtl/xor.vhd" \
+"../../../../comparator.srcs/sim_1/new/tb_cla_adder.vhd" \
+
+# Do not sort compile order
+nosort

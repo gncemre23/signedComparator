@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../rtl/gate_package.vhd" \
+"../../../../../rtl/cla_adder.vhd" \
+"../../../../../rtl/2_complement.vhd" \
+"../../../../../rtl/and.vhd" \
+"../../../../../rtl/and_generic.vhd" \
+"../../../../../rtl/inverter.vhd" \
+"../../../../../rtl/magnitude_comparator_4bit.vhd" \
+"../../../../../rtl/nor.vhd" \
+"../../../../../rtl/or.vhd" \
+"../../../../../rtl/or_generic.vhd" \
+"../../../../../rtl/partial_full_adder.vhd" \
+"../../../../../rtl/stage2_comp.vhd" \
+"../../../../../rtl/xnor.vhd" \
+"../../../../../rtl/xor.vhd" \
+"../../../../../tb/tb_comparator.vhd" \
+
+# Do not sort compile order
+nosort

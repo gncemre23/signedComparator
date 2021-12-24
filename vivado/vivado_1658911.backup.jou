@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 24 13:59:38 2021
+# Process ID: 1658911
+# Current directory: /home/egoncu/Desktop/github/signedComparator/vivado
+# Command line: vivado
+# Log file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.log
+# Journal file: /home/egoncu/Desktop/github/signedComparator/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project comparator . -part xc7a25tcsg325-2L
+set_property target_language VHDL [current_project]
+add_files {/home/egoncu/Desktop/github/signedComparator/rtl/xnor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd /home/egoncu/Desktop/github/signedComparator/rtl/partial_full_adder.vhd /home/egoncu/Desktop/github/signedComparator/rtl/nor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/or.vhd /home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd /home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd /home/egoncu/Desktop/github/signedComparator/rtl/nand.vhd /home/egoncu/Desktop/github/signedComparator/rtl/xor.vhd /home/egoncu/Desktop/github/signedComparator/rtl/and.vhd /home/egoncu/Desktop/github/signedComparator/rtl/inverter.vhd /home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+file mkdir /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd w ]
+add_files -fileset sim_1 /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source Tb_Carry_Look_Ahead.tcl
+restart
+restart
+run 100 us
+relaunch_sim
+relaunch_sim

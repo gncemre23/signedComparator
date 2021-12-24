@@ -1,0 +1,1236 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 1658911
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Dec 24 13:59:54 EET 2021
+Time zone: 	Eastern European Time (Europe/Istanbul)
+
+OS: Ubuntu
+OS Version: 5.11.0-43-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	egoncu
+User home directory: /home/egoncu
+User working directory: /home/egoncu/Desktop/github/signedComparator/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/egoncu/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/egoncu/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/egoncu/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/egoncu/Desktop/github/signedComparator/vivado/vivado.log
+Vivado journal file location: 	/home/egoncu/Desktop/github/signedComparator/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1658911-egoncu-desktop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,598 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,598 MB. GUI used memory: 65 MB. Current time: 12/24/21, 1:59:55 PM EET
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 96 MB (+98009kb) [00:03:07]
+// [Engine Memory]: 1,600 MB (+1526544kb) [00:03:07]
+// [GUI Memory]: 117 MB (+17491kb) [00:03:09]
+// [GUI Memory]: 125 MB (+1368kb) [00:03:09]
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "comparator"); // aa
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+setFolderChooser("/home/egoncu/Desktop/github/signedComparator/rtl");
+selectComboBox(PAResourceQtoS.SrcChooserPanel_TARGET_LANGUAGE, "VHDL", 0); // e
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField
+selectComboBox(PAResourceEtoH.FPGAChooser_FAMILY, "All", 0); // v
+selectComboBox(PAResourceEtoH.FPGAChooser_PACKAGE, "csg325", 4); // v
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a25tcsg325-2L ; 325 ; 150 ; 14600 ; 29200 ; 45 ; 0 ; 80 ; 4 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 3 ;  ; 0 ; 100 ; 100 ; E ; 0.95 ; 0.95 ; 1.05", 12, "xc7a25tcsg325-2L", 0); // w
+selectButton("NEXT", "Next >"); // JButton
+// bz (cr):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// Tcl Message: create_project comparator . -part xc7a25tcsg325-2L 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1982 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,675 MB. GUI used memory: 78 MB. Current time: 12/24/21, 2:03:40 PM EET
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 48 seconds
+dismissDialog("Create Project"); // bz
+dismissDialog("New Project"); // f
+// [GUI Memory]: 137 MB (+6193kb) [00:03:58]
+// [Engine Memory]: 1,697 MB (+16961kb) [00:03:58]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd)]", 1, true); // D - Node
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), PFA0 : partial_full_adder(arch) (partial_full_adder.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), OR_GEN5 : or_generic(arch) (or_generic.vhd)]", 44, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), OR_GEN5 : or_generic(arch) (or_generic.vhd), GEN7.or2 : or_gate(arch) (or.vhd)]", 47, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("or_generic.vhd", 952, 175); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 1); // m
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "or_generic.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 1); // m
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), OR_GEN5 : or_generic(arch) (or_generic.vhd), xil_defaultlib.or_gate]", 51, false); // D
+// Elapsed time: 29 seconds
+selectCodeEditor("cla_adder.vhd", 52, 169); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "or_generic.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,772 MB. GUI used memory: 80 MB. Current time: 12/24/21, 2:07:10 PM EET
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 1); // m
+selectCodeEditor("cla_adder.vhd", 792, 210); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("cla_adder.vhd", 113, 301); // bP
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), AND_GEN15 : and_generic(arch) (and_generic.vhd)]", 38, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd), AND_GEN15 : and_generic(arch) (and_generic.vhd)]", 38, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 31 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gate_package.vhd]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gate_package.vhd]", 2, false, false, false, false, false, true); // D - Double Click
+// [Engine Memory]: 1,789 MB (+8230kb) [00:09:19]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a25tcsg325-2L Top: carry_look_ahead 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,800 MB. GUI used memory: 82 MB. Current time: 12/24/21, 2:09:15 PM EET
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a25tcsg325-2L 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7511.355 ; gain = 0.000 ; free physical = 375 ; free virtual = 17544 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:51] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:52] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:91] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:92] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:56] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:57] 
+// Tcl Message: INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:58] 
+// Tcl Message: INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:92] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:61] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:62] 
+// Tcl Message: INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:63] 
+// Tcl Message: INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:64] 
+// Tcl Message: INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:93] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:67] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:68] 
+// Tcl Message: INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:69] 
+// Tcl Message: INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:70] 
+// Tcl Message: INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:71] 
+// Tcl Message: INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:94] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:95] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_3 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:74] 
+// Tcl Message: INFO: [Synth 8-994] i_3 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:75] INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_4 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:75] 
+// Tcl Message: INFO: [Synth 8-994] i_4 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:76] INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_5 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:76] 
+// Tcl Message: INFO: [Synth 8-994] i_5 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:77] INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_6 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:77] 
+// Tcl Message: INFO: [Synth 8-994] i_6 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:78] INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: ERROR: [Synth 8-2029] formal i_7 has no actual or default value [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:78] 
+// Tcl Message: INFO: [Synth 8-994] i_7 is declared here [/home/egoncu/Desktop/github/signedComparator/rtl/gate_package.vhd:79] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 7569.039 ; gain = 57.684 ; free physical = 412 ; free virtual = 17583 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 70 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dV' command handler elapsed time: 8 seconds
+// U (cr): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectCodeEditor("cla_adder.vhd", 254, 295); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("cla_adder.vhd", 470, 292); // bP
+selectCodeEditor("cla_adder.vhd", 471, 293, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectComboBox("FindAndReplaceDialog.cr_Find what:", "open", -1); // JComboBox
+selectComboBox("FindAndReplaceDialog.cr_Replace with:", "'0'", -1); // JComboBox
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton
+selectCodeEditor("cla_adder.vhd", 759, 157); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("cla_adder.vhd", 753, 259); // bP
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u - Popup Trigger - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_RTL_DESIGN, "New Elaborated Design..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_RTL_DESIGN
+// O (cr): Open Elaborated Design: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Open Elaborated Design"); // O
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK
+// Elapsed time: 15 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 4, 131); // dS
+// Tcl Command: 'rdi::info_commands {s*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "synth_design -rtl -rtl_skip_mlo -name rtl_1", true); // l
+// Tcl Command: 'synth_design -rtl -rtl_skip_mlo -name rtl_1'
+// Tcl Command: 'synth_design -rtl -rtl_skip_mlo -name rtl_1'
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a25tcsg325-2L Top: carry_look_ahead 
+// bz (cr):  Tcl Command Line : addNotify
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,063 MB. GUI used memory: 83 MB. Current time: 12/24/21, 2:11:58 PM EET
+// [Engine Memory]: 2,063 MB (+193424kb) [00:12:13]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,186 MB (+20612kb) [00:12:14]
+// [GUI Memory]: 144 MB (+147kb) [00:12:14]
+// [GUI Memory]: 155 MB (+4287kb) [00:12:14]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1907 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7586.043 ; gain = 0.000 ; free physical = 366 ; free virtual = 17546 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN0' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:51] INFO: [Synth 8-638] synthesizing module 'and_generic' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND0' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:33] INFO: [Synth 8-3491] module 'and_gate' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and.vhd:6' bound to instance 'AND1' of component 'and_gate' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:34] INFO: [Synth 8-256] done synthesizing module 'and_generic' (5#1) [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN0' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:52] INFO: [Synth 8-638] synthesizing module 'or_generic' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN1' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:56] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN2' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:57] INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized0' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN1' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:58] INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized0' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN3' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:61] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN4' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:62] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN5' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:63] INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized1' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN2' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:64] INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized1' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN6' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:67] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN7' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:68] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN8' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:69] 
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN9' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:70] INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized2' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN3' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:71] INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized2' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN10' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:74] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN11' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:75] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN12' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:76] 
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN13' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:77] 
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN14' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:78] INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized3' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN4' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:79] INFO: [Synth 8-638] synthesizing module 'or_generic__parameterized3' [/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN15' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:82] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN16' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:83] 
+// Tcl Message: 	Parameter WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN17' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:84] 
+// Tcl Message: 	Parameter WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN18' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:85] 
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN19' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:86] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'and_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:8' bound to instance 'AND_GEN20' of component 'AND_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:87] INFO: [Synth 8-638] synthesizing module 'and_generic__parameterized4' [/home/egoncu/Desktop/github/signedComparator/rtl/and_generic.vhd:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'or_generic' declared at '/home/egoncu/Desktop/github/signedComparator/rtl/or_generic.vhd:8' bound to instance 'OR_GEN5' of component 'OR_GENERIC' [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:88] INFO: [Synth 8-256] done synthesizing module 'carry_look_ahead' (7#1) [/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7586.043 ; gain = 0.000 ; free physical = 414 ; free virtual = 17595 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7601.918 ; gain = 15.875 ; free physical = 412 ; free virtual = 17592 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7601.918 ; gain = 15.875 ; free physical = 412 ; free virtual = 17592 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7601.918 ; gain = 0.000 ; free physical = 405 ; free virtual = 17586 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7770.668 ; gain = 0.000 ; free physical = 323 ; free virtual = 17513 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 7894.949 ; gain = 308.906 ; free physical = 346 ; free virtual = 17469 
+// Tcl Message: 127 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 7894.949 ; gain = 308.906 ; free physical = 348 ; free virtual = 17471 
+// Tcl Message: rtl_1 
+dismissDialog("Tcl Command Line"); // bz
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 2); // m
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // m
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 2); // m
+// Elapsed time: 19 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Unreferenced]", 9); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 60); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 61, true); // D - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_cla_adder"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 /home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// [GUI Memory]: 168 MB (+5782kb) [00:13:42]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 35 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 60); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 60); // D
+// Elapsed time: 35 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 61); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_cla_adder(Behavioral) (tb_cla_adder.vhd)]", 66, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_cla_adder(Behavioral) (tb_cla_adder.vhd)]", 66, false, false, false, false, false, true); // D - Double Click
+typeControlKey((HResource) null, "tb_cla_adder.vhd", 'v'); // bP
+selectButton("OptionPane.button", "Yes"); // JButton
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_cla_adder.vhd", 12, 129); // bP
+selectCodeEditor("tb_cla_adder.vhd", 8, 122); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_cla_adder.vhd", 11, 476); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("tb_cla_adder.vhd", 7, 337); // bP
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,213 MB. GUI used memory: 110 MB. Current time: 12/24/21, 2:15:15 PM EET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("tb_cla_adder.vhd", 3, 294); // bP
+selectCodeEditor("tb_cla_adder.vhd", 8, 291); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_cla_adder.vhd", 203, 232); // bP
+selectCodeEditor("tb_cla_adder.vhd", 178, 94); // bP
+selectCodeEditor("tb_cla_adder.vhd", 72, 238); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_cla_adder.vhd", 73, 323); // bP
+selectCodeEditor("tb_cla_adder.vhd", 65, 410); // bP
+selectCodeEditor("tb_cla_adder.vhd", 72, 409); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_cla_adder.vhd", 6); // m
+selectCodeEditor("tb_cla_adder.vhd", 199, 274); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,255 MB. GUI used memory: 110 MB. Current time: 12/24/21, 2:17:15 PM EET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Tb_Carry_Look_Ahead' Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_cla_adder.vhd", 6); // m
+selectCodeEditor("tb_cla_adder.vhd", 7, 95); // bP
+selectCodeEditor("tb_cla_adder.vhd", 54, 417); // bP
+selectCodeEditor("tb_cla_adder.vhd", 6, 412); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/vivado/comparator.srcs/sim_1/new/tb_cla_adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Tb_Carry_Look_Ahead' Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2020.2 (64-bit)   **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source /home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim/xsim.dir/Tb_Carry_Look_Ahead_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Fri Dec 24 14:17:56 2021... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "Tb_Carry_Look_Ahead_behav -key {Behavioral:sim_1:Functional:Tb_Carry_Look_Ahead} -tclbatch {Tb_Carry_Look_Ahead.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 2,306 MB (+11124kb) [00:18:12]
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source Tb_Carry_Look_Ahead.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,322 MB. GUI used memory: 126 MB. Current time: 12/24/21, 2:17:59 PM EET
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'Tb_Carry_Look_Ahead_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 8145.363 ; gain = 186.844 ; free physical = 352 ; free virtual = 17408 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, A[7:0]]", 0, true); // a - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,357 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:18:02 PM EET
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, A[7:0]]", 0, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenu("Name"); // ah
+selectMenu("Waveform Style"); // ah
+selectMenu("Signal Color"); // ah
+selectMenu("Radix"); // ah
+selectMenu("Radix"); // ah
+selectMenuItem((HResource) null, "Unsigned Decimal"); // Y
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, B[7:0]]", 1, true); // a - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, B[7:0]]", 1, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenu("Name"); // ah
+selectMenu("Waveform Style"); // ah
+selectMenu("Signal Color"); // ah
+selectMenu("Radix"); // ah
+selectMenu("Radix"); // ah
+selectMenuItem((HResource) null, "Unsigned Decimal"); // Y
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,349 MB. GUI used memory: 156 MB. Current time: 12/24/21, 2:18:12 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, S[7:0]]", 3, true); // a - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, S[7:0]]", 3, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenu("Name"); // ah
+selectMenu("Waveform Style"); // ah
+selectMenu("Signal Color"); // ah
+selectMenu("Radix"); // ah
+selectMenu("Radix"); // ah
+selectMenuItem((HResource) null, "Unsigned Decimal"); // Y
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 2,349 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:18:28 PM EET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,349 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:18:33 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,349 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:18:33 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "uut ; carry_look_ahead(arch) ; VHDL Entity", 1, "uut", 0, true); // c - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "C1 ; 0 ; Logic", 5, "C1", 0, false); // c
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "wire[27:0] ; 0000400 ; Array", 14, "wire[27:0]", 0, true, true, false, false, false, false); // c - Shift Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "C1 ; 0 ; Logic", 5, "C1", 0, false); // c
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bz (cr):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bz
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bz (cr):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bz
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 2,356 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:06 PM EET
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 100 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 11 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 200, 144); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:22 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 120 MB. Current time: 12/24/21, 2:19:23 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 25 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 157, 149); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:45 PM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 162, 145); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,352 MB. GUI used memory: 120 MB. Current time: 12/24/21, 2:19:46 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 10, 141); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,352 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:49 PM EET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,352 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:51 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,352 MB. GUI used memory: 119 MB. Current time: 12/24/21, 2:19:52 PM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,352 MB. GUI used memory: 116 MB. Current time: 12/24/21, 2:19:56 PM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 25, 75); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_cla_adder.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1*", 5); // m
+// Elapsed time: 49 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 90 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cr):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Command: launch_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj INFO: [VRFC 10-163] Analyzing VHDL file "/home/egoncu/Desktop/github/signedComparator/rtl/cla_adder.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'carry_look_ahead' Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds 
+// Tcl Message: Command: launch_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,377 MB. GUI used memory: 117 MB. Current time: 12/24/21, 2:22:56 PM EET
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8169.859 ; gain = 10.977 ; free physical = 378 ; free virtual = 17436 
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("Relaunch Simulation"); // b
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cla_adder.vhd", 0); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, carry_look_ahead(arch) (cla_adder.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // E
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cr):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Command: launch_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Tb_Carry_Look_Ahead' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: xvhdl --incr --relax -prj Tb_Carry_Look_Ahead_vhdl.prj Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds 
+// Tcl Message: Command: launch_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/egoncu/Desktop/github/signedComparator/vivado/comparator.sim/sim_1/behav/xsim' 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log Vivado Simulator 2020.2 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved. Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 84e988b0217048268e1a0588a48078c7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Tb_Carry_Look_Ahead_behav xil_defaultlib.Tb_Carry_Look_Ahead -log elaborate.log  Using 8 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds 
+// Tcl Message: Vivado Simulator 2020.2 
