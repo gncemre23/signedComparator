@@ -55,7 +55,6 @@ end component;
   signal not_b         : std_logic;
   signal wire          : std_logic_vector(5 downto 0);
 
-  signal comparator_in : std_logic_vector(7 downto 0);
 
   signal neg_A, neg_B : std_logic_vector(7 downto 0);
 
@@ -64,8 +63,7 @@ end component;
 
 begin
 
-  comparator_in_A <= ((A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7)) and neg_A) or ((not_A & not_A & not_A & not_A & not_A & not_A & not_A & not_A) and A);
-  comparator_in_B <= ((B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7)) and neg_B) or ((not_B & not_B & not_B & not_B & not_B & not_B & not_B & not_B) and B);
+  
 
   magnitude_comparator_4bit_low : magnitude_comparator_4bit
   port map(
@@ -104,7 +102,9 @@ begin
     A => B,
     neg_A => neg_B
   );
-
+  
+  comparator_in_A <= ((A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7) & A(7)) and neg_A) or ((not_A & not_A & not_A & not_A & not_A & not_A & not_A & not_A) and A);
+  comparator_in_B <= ((B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7) & B(7)) and neg_B) or ((not_B & not_B & not_B & not_B & not_B & not_B & not_B & not_B) and B);W
 
   -- A > B
 

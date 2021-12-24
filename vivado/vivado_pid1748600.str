@@ -1071,3 +1071,8 @@ selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 623, 64, true, false, 
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_UPDATE_COMMANDS
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,921 MB (+231kb) [00:20:43]
